@@ -15,7 +15,7 @@ public class Entry
     {
         // Display the entry details
         Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
-        Console.WriteLine($"Entry: {_entryText}");
+        Console.WriteLine($"{_entryText}");
         Console.WriteLine(); // Blank line for spacing
     }
 }

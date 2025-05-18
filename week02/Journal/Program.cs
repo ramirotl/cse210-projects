@@ -11,7 +11,7 @@ class Program
         string userInput = "";
         while (userInput != "5")
         {
-            Console.Write("Please select one of the following choices: ");
+            Console.WriteLine("Please select one of the following choices: ");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
@@ -28,7 +28,7 @@ class Program
                 // Get the user's response
                 string prompt = promptGenerator.GetRandomPrompt();
                 Console.WriteLine(prompt);
-                Console.Write(">");
+                Console.Write("> ");
                 string response = Console.ReadLine();
                 string date = DateTime.Now.ToString("MM/dd/yyyy");
 
