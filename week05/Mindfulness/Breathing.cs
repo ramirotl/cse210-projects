@@ -13,5 +13,23 @@ public class Breathing : Activity
     public void Run()
     {
 
+        int totalTime = GetDuration();
+        int elapsed = 0;
+
+        while (elapsed < totalTime)
+        {
+            Console.WriteLine();
+            Console.Write("Breathe in... ");
+            ShowCountDown(3);
+
+            Console.WriteLine();
+            Console.Write("Breathe out... ");
+            ShowCountDown(3);
+
+            elapsed += 6;
+        }
+
+
+
     }
 }
